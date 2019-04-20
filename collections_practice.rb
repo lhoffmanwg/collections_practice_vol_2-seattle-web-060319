@@ -52,3 +52,20 @@ def find_cool(cool_ary)
   
   return new_ary
 end  
+
+def organize_schools(school_hash)
+  new_hash = {}
+  school_ary = []
+  school_hash.each do |school_name_key, location_hash|
+    location_hash.each do |location_key, location_value|
+      school_ary = new_hash[location_value]
+      if (school_ary == nil)
+        new_hash[location_value] = [school_name_key]
+      else
+        new_hash[location_value] = school_ary.push(school_name_key)
+      end
+     binding.pry
+    end  
+  end  
+  return new_hash
+end  
