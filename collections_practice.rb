@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 
 def count_elements(name_ary)
   new_hash = {}
@@ -12,6 +12,6 @@ def count_elements(name_ary)
       else
         new_hash[name_value] = count + 1 
       end  
-      binding.pry
+      #binding.pry
     end 
   end
