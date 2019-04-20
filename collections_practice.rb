@@ -1,4 +1,4 @@
-require 'pry'
+exitrequire 'pry'
 
 def count_elements(name_ary)
   new_hash = {}
