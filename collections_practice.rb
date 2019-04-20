@@ -39,3 +39,15 @@ def merge_data(ary_of_hashes, another_ary_of_hashes)
   #binding.pry
   return merged_ary
 end  
+
+def find_cool(cool_ary)
+  new_ary = []
+  cool_ary.each do |element|
+    element.each do |key, value|
+      if value == "cool"
+        new_ary.push(element)
+      end
+    end  
+  end  
+  return new_ary
+end  
