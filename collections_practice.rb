@@ -36,6 +36,6 @@ def merge_data(ary_of_hashes, another_ary_of_hashes)
        end  
     end
   end  
-  binding.pry
+  #binding.pry
   return merged_ary
 end  
