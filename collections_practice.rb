@@ -49,6 +49,6 @@ def find_cool(cool_ary)
       end
     end  
   end  
-  binding.pry
+  
   return new_ary
 end  
