@@ -22,3 +22,20 @@ def count_elements(name_ary)
   
   return new_ary
 end  
+
+def merge_data(ary_of_hashes, another_ary_of_hashes)
+  merged_ary = []
+  ary_of_hashes.each do |element|
+    element.each do |name_lable, name_value|
+      another_ary_of_hashes.each do |detail_element|
+         detail_element.each do |name_key, hash|
+            if name_value == name_key
+              merged_ary.push(element.merge(hash))   
+           end
+         end
+       end  
+    end
+  end  
+  binding.pry
+  return merged_ary
+end  
