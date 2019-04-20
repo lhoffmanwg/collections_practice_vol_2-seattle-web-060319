@@ -12,7 +12,7 @@ def count_elements(name_ary)
       else
         new_hash[name_value] = count + 1 
       end  
-      binding.pry
+      
     end 
   end
   
